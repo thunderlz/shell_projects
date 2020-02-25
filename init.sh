@@ -12,10 +12,10 @@ echo 下载软件完成
 echo 开始启动服务...
 sudo systemctl start mysqld
 sudo systemctl start httpd
-sudo systemctl start  smb
+sudo systemctl start  smb nmb
 sudo systemctl enable mysqld
 sudo systemctl enable httpd
-sudo systemctl enable  smb
+sudo systemctl enable  smb nmb
 echo 服务启动完成
 echo 开始防火墙配置...
 sudo firewall-cmd --add-service=mysql --permanent
