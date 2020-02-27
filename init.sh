@@ -1,12 +1,12 @@
 #!/bin/bash
-sudo hostnamectl set-hostname lzcentos8
+sudo hostnamectl set-hostname centos8
 echo 修改名称成功
 echo 开始下载软件...
 sudo yum install mysql
 sudo yum install mysql-server
 sudo yum install mysql-devel
 sudo yum install httpd
-sudo yum install samba
+sudo yum install samba nmb
 sudo yum  update
 echo 下载软件完成
 echo 开始启动服务...
